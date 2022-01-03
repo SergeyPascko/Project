@@ -1,0 +1,10 @@
+public static int[] GetFirstEvenNumbers(int count)
+{
+if (count < 1) return null;
+int[] tempArray = new int[count];
+
+for (int i = 1; i <= count; i++)
+    tempArray[i - 1] = i * 2;
+
+return tempArray;
+}
